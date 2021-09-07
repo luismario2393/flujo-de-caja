@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Flujo de Caja</title>
+</head>
+<body>
+  <h1 class="title">Flujo de Caja</h1>
+
+  <section class="section container">
+    <h2 class="section-title">¿Que deseas ingresar?</h2>
+    <div class="container-btn">
+
+      <button id="btn-ingreso" class="btn-ingreso">Ingreso</button>
+      <button id="btn-gasto" class="btn-gasto">Gasto</button>
+    </div>
+  </section>
+
+  <main class="main-res container">
+    <section class="container-in-gas">
+      <div class="ingreso">
+        <h3>Ingresos</h3>
+        <ul class="lista" id="lista-ingreso">
+          <li class="item">
+            <p>Negocio</p>
+            <p>$30</p>
+          </li>
+          <li class="item">
+            <p>Falacia</p>
+            <p>$30</p>
+          </li>
+          <li class="item">
+            <p>Renta Casa</p>
+            <p>$30</p>
+          </li>
+          <li class="item">
+            <p>Flow</p>
+            <p>$30</p>
+          </li>
+        </ul>
+        <div class="container-total">
+          <p class="total">Total Gastos:</p>
+          <p class="total-ingreso">$30</p>
+        </div>
+      </div>
+      <div class="gasto">
+        <h3>Gastos</h3>
+        <ul class="lista" id="lista-gasto">
+          <li class="item">
+            <p>motilada</p>
+            <p>$30</p>
+          </li>
+          <li class="item">
+            <p>cerveza</p>
+            <p>$30</p>
+          </li>
+          <li class="item">
+            <p>Carro</p>
+            <p>$30</p>
+          </li>
+          <li class="item">
+            <p>Bus</p>
+            <p>$30</p>
+          </li>
+        </ul>
+        <div class="container-total">
+          <p class="total">Total Gastos:</p>
+          <p class="total-gasto">$30</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-res">
+      <div class="container-res__div">
+        <h3 class="container-res__div-bal">Balance</h3>
+        <p class="balance">$ 500</p>
+        <p class="mensajito">Tus finanzas son sanas</p>
+      </div>
+    </section>
+
+  </main>
+  
+  <section id="container-form" class="container-form ">
+    
+      <form id="form" class="form ">
+        <h3 id="title-form" class="title-form">Agrega un nuevo <span></span></h3>
+        <label for=""> 
+          <p id="p-form-e" class="p-form"></p>
+          <input class="input-form" type="text" name="tipo" placeholder="Nombre del gasto">
+        </label>
+        <label for="">
+          <p id="p-form-c" class="p-form"></p> 
+          <input class="input-form" type="number" name="valor" placeholder="Valor">
+        </label>
+        <div class="container-button-form">
+          <button id="btn-form" class="btn-form ">Agregar <span></span></button>
+          <button id="btn-form-can" class="btn-form-can">Cancelar</button>
+        </div>
+      </form>
+
+  </section>
+
+  <script src="./js/app.js"></script>
+  
+</body>
+</html>
