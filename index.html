@@ -26,51 +26,21 @@
       <div class="ingreso">
         <h3>Ingresos</h3>
         <ul class="lista" id="lista-ingreso">
-          <li class="item">
-            <p>Negocio</p>
-            <p>$30</p>
-          </li>
-          <li class="item">
-            <p>Falacia</p>
-            <p>$30</p>
-          </li>
-          <li class="item">
-            <p>Renta Casa</p>
-            <p>$30</p>
-          </li>
-          <li class="item">
-            <p>Flow</p>
-            <p>$30</p>
-          </li>
+          
         </ul>
         <div class="container-total">
           <p class="total">Total Gastos:</p>
-          <p class="total-ingreso">$30</p>
+          <p id="total-ingreso" class="total-ingreso"></p>
         </div>
       </div>
       <div class="gasto">
         <h3>Gastos</h3>
         <ul class="lista" id="lista-gasto">
-          <li class="item">
-            <p>motilada</p>
-            <p>$30</p>
-          </li>
-          <li class="item">
-            <p>cerveza</p>
-            <p>$30</p>
-          </li>
-          <li class="item">
-            <p>Carro</p>
-            <p>$30</p>
-          </li>
-          <li class="item">
-            <p>Bus</p>
-            <p>$30</p>
-          </li>
+          
         </ul>
         <div class="container-total">
           <p class="total">Total Gastos:</p>
-          <p class="total-gasto">$30</p>
+          <p id="total-gasto" class="total-gasto"></p>
         </div>
       </div>
     </section>
@@ -78,8 +48,8 @@
     <section class="container-res">
       <div class="container-res__div">
         <h3 class="container-res__div-bal">Balance</h3>
-        <p class="balance">$ 500</p>
-        <p class="mensajito">Tus finanzas son sanas</p>
+        <p id="balance" class="balance"></p>
+        <div id="mensajito" class="mensajito"></div>
       </div>
     </section>
 
@@ -91,11 +61,11 @@
         <h3 id="title-form" class="title-form">Agrega un nuevo <span></span></h3>
         <label for=""> 
           <p id="p-form-e" class="p-form"></p>
-          <input class="input-form" type="text" name="tipo" placeholder="Nombre del gasto">
+          <input id="tipo" class="input-form" type="text" name="tipo" placeholder="Tipo">
         </label>
         <label for="">
           <p id="p-form-c" class="p-form"></p> 
-          <input class="input-form" type="number" name="valor" placeholder="Valor">
+          <input id="valor" class="input-form" type="number" name="valor" placeholder="Valor">
         </label>
         <div class="container-button-form">
           <button id="btn-form" class="btn-form ">Agregar <span></span></button>

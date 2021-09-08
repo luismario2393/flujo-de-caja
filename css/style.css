@@ -151,12 +151,14 @@ h3 {
   border: 1px solid var(--purple);
   margin: 0;
   padding-left: 1rem;
-
 }
 .item {
   display: grid;
   grid-template-columns: 4fr 1fr;
+  text-decoration: none;
 }
+
+
 
 .gasto h3 {
   background-color: var(--purple);
@@ -214,10 +216,18 @@ h3 {
   margin: 0;
 }
 .mensajito {
-  color: var(--green);
   font-size: 2rem;
   font-weight: bold;
   font-style: italic;
+}
+.error {
+  color: var(--red);
+}
+.neutro {
+  color: #FFB319;
+}
+.positivo {
+  color: var(--green);
 }
 
 @media (max-width: 480px) { 
@@ -272,6 +282,7 @@ h3 {
   border: none;
   border-radius: 0.5rem;
   background-color: #6b7aa130;
+  outline: none;
 }
 .container-button-form {
   display: flex;
@@ -307,4 +318,12 @@ h3 {
 }
 .bg-green {
   background-color: var(--green);
+}
+.alerta {
+  text-align: center;
+  border: 1px solid var(--red);
+  color: var(--red);
+  font-weight: bold;
+  width: 100%;
+  padding: 0.5rem;
 }
