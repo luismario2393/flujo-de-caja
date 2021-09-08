@@ -39,16 +39,18 @@ document.addEventListener('DOMContentLoaded', () => {
 function leerInfo(e) {
   e.preventDefault();
   
+  
   if(titleSpan.textContent === 'Ingreso') {
 
     infoIngreso = {
-      tipo: document.querySelector('#tipo').value,
-      valor: parseInt(document.querySelector('#valor').value),
+      tipo: inputTipo.value,
+      valor: Number(inputValor.value),
       id: Date.now()
     }
   
     ingreso = [...ingreso, infoIngreso];
-  
+    
+    console.log(ingreso)
     ingresoHTML()
     form.reset();
     containerForm.classList.remove('active');
@@ -56,12 +58,13 @@ function leerInfo(e) {
   } else if(titleSpan.textContent === 'Gasto'){
 
     infoGasto = {
-      tipo: document.querySelector('#tipo').value,
-      valor: parseInt(document.querySelector('#valor').value),
+      tipo: inputTipo.value,
+      valor: Number(inputValor.value),
       id: Date.now()
     }
 
     gasto = [...gasto, infoGasto];
+
 
     gastoHTML();
     form.reset();
@@ -183,17 +186,12 @@ function ingresoHTML() {
   
 }
 
-function balance() {
-
-  
-}
  
 function validarForm(e) {
   e.preventDefault();
-  const inputTipo = document.querySelector('#tipo').value;
-  const inputValor = document.querySelector('#valor').value;
   
-  if(inputTipo === '' || inputValor === '') {
+  
+  if(inputTipo.value === '' || inputValor.value === '') {
     mostrarMensaje('Todos los campos son obligatorios')
   }
   
